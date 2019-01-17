@@ -8,3 +8,8 @@ body {
   color: $dark;
   overflow: hidden;
 }
+
+main {
+  display: flex;
+  grid-column: span 2;
+}

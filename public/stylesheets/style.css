@@ -16,21 +16,54 @@ body {
   color: #333;
   overflow: hidden; }
 
+main {
+  display: flex;
+  grid-column: span 2; }
+
 .grid {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 48px auto 48px; }
+  grid-gap: 10px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto; }
 
-.grid__scroll-area {
-  overflow-y: scroll; }
-
+/*height: 100vh;*/
+/*  grid-template-rows: 48px auto 48px; // header, scroll-area, footer*/
+/*.grid__scroll-area 
+  overflow-y: scroll;*/
 .header {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.footer {
+.header__image {
+  width: 333px; }
+
+.stage {
   display: flex;
-  align-items: center; }
+  height: 100px;
+  width: 100px;
+  grid-column: span 2;
+  background: blue; }
+
+.who {
+  background: purple; }
+
+.get {
+  background: yellow; }
+
+.digital {
+  background: green; }
+
+.done {
+  background: red; }
+
+.references {
+  background: orange; }
+
+.contact {
+  background: orangered; }
+
+.footer {
+  background: grey; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,11 @@
 .grid {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 48px auto 48px; // header, scroll-area, footer
+  grid-gap: 10px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
 }
+/*height: 100vh;*/
+/*  grid-template-rows: 48px auto 48px; // header, scroll-area, footer*/
 
-.grid__scroll-area {
-  overflow-y: scroll;
-}
+/*.grid__scroll-area 
+  overflow-y: scroll;*/

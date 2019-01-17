@@ -1,28 +1,31 @@
 .stage {
-  grid-area: s;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  grid-column: span 2;
+  background: blue;
 }
 
 .who {
-  grid-area: w;
+  background: purple;
 }
 
 .get {
-  grid-area: g;
-  background: dark;
+  background: yellow;
 }
 
 .digital {
-  grid-area: d;
+  background: green;
 }
 
 .done {
-  grid-area: do;
+  background: red;
 }
 
 .references {
-  grid-area: r;
+  background: orange;
 }
 
 .contact {
-  grid-area: c;
+  background: orangered;
 }
