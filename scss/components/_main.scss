@@ -1,30 +1,157 @@
+main {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__p {
+  margin: auto;
+  padding: 0.5em;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+.main__ul {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+
+.main__h1 {
+  font-size: 60px;
+  margin: 25px;
+}
+
+.main__h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 25px;
+}
+
+.main__button,
+.main__ul--li {
+  align-self: center;
+  background: #f2511b;
+  border-radius: 6px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: unset;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.main__ul--li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+
 .stage {
   display: flex;
-  height: 100px;
-  width: 100px;
-  background: blue;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
 }
 
 .who {
-  background: purple;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+}
+
+.who__img {
+  max-width: 300px;
+  margin-left: 25px;
+
+  @media screen and (max-width: 630px) {
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+  }
 }
 
 .get {
-  background: yellow;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+
+  @media screen and (min-width: 930px) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
 }
 
 .digital {
-  background: green;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+
+  @media screen and (min-width: 930px) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
 }
 
 .done {
-  background: red;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+
+  @media screen and (min-width: 930px) {
+    grid-row: 6 / 7;
+  }
 }
 
 .references {
-  background: orange;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 7 / 8;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+
+  @media screen and (min-width: 930px) {
+    grid-row: 7 / 8;
+  }
 }
 
 .contact {
-  background: orangered;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  grid-row: 8 / 9;
+  background: #f3f5f6;
+  padding: 20px;
+  box-shadow: 0 10px 6px -6px #003049;
+
+  @media screen and (min-width: 930px) {
+    grid-row: 8 / 9;
+  }
 }

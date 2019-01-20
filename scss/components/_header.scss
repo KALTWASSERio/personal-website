@@ -2,8 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
-.header__image {
-  width: 333px;
+.header__img {
+  display: flex;
+  flex: 1;
+  max-width: 300px;
+  justify-content: center;
+  align-items: center;
 }

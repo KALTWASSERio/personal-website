@@ -6,6 +6,17 @@
   color: $light;
 }
 
-.p-20 {
-  padding: 20px;
+.flex {
+  display: flex;
+
+  @media screen and (max-width: 630px) {
+    flex-direction: column;
+  }
+}
+
+.links {
+  color: #f2511b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.5em;
 }
